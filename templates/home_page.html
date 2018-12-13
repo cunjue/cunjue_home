@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="content-language" content="th">
+    <title>寸珏的个人站</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="{% static 'css/home_page.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/swiper.css' %}">
+
+
+</head>
+<body>
+
+    <div class="head_img">
+        <img src="{% static 'img/bg-top.png' %}">
+    </div>
+    <div class="myselect">
+        <h1>Hello, world!</h1>
+        <p>这里是寸珏的个人小站，用来记录一些值得记的事情！</p>
+        <a href="url {% url 'c_1:register' %}" class="text-button">想注册一下吗</a>
+        <span class="text-button">&nbsp;•&nbsp;</span>
+        <a href="#" class="text-button">不想就算了</a>
+    </div>
+{#    <div class="wrapper intro text-center en">#}
+{#		<div class="intro">#}
+{#			Welcome to cunjue  <br>#}
+{#		</div>#}
+{#	</div>#}
+    <div id="background_div">
+        <img src="{% static 'img/bg-bottom.png' %}" id="background_img">
+    </div>
+
+</body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function(){
+
+    });
+</script>
